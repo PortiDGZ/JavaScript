@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h2 id="h">Arrays</h2>
+    <script>
+        var tabla = [1, "cadena", true];
+
+        document.write(tabla + "<br>"); // Muestra el array entero
+        document.write(tabla[0] + "<br>"); // Muestra la primera posición
+
+        tabla.push("elemento 4"); // Añadir elemento
+        document.write(tabla + "<br>"); // Muestra el array nuevo
+        document.write(tabla.length + "<br>"); // Longitud del array
+
+
+        // Ejercicios
+        var coches = [' Lamborghini', " Bugatti", " Ferrari", " McLaren"];
+        document.getElementById("h").innerHTML += coches;
+        document.getElementById("h").innerHTML += coches[0];
+        coches[1] = ' Ford';
+        document.getElementById("h").innerHTML += coches[1];
+        coches[3] = ' Masserati ';
+        document.getElementById("h").innerHTML += coches[3];
+        document.getElementById("h").innerHTML += coches.length;
+        document.getElementById("h").innerHTML += coches[coches.length - 1];
+        coches[coches.length] = ' Tesla';
+        document.getElementById("h").innerHTML += coches[4];
+
+        // ToString()
+        document.write(coches.toString() + "<br>");
+
+        // Join()
+        document.write(coches.join(" + ") + "<br>");
+
+        // Pop()
+        document.write(coches.pop() + "<br>");
+        document.write(coches + "<br>");
+
+        // Push()
+        document.write(coches.push(" Alfa Romeo") + "<br>");
+        document.write(coches + "<br>");
+
+        // Shift()
+        document.write(coches.shift() + "<br>");
+        document.write(coches + "<br>");
+
+        // Delete
+        delete coches[2];
+        document.write(coches + "<br>");
+
+        // Unshift()
+        document.write(coches.unshift(" Aston Martin") + "<br>");
+        document.write(coches + "<br>");
+
+        //Splice(posicion, n_eliminados, nuevo elemento, nuevo elemento,...)
+        document.write(coches.splice(2, 2, " Hennessey") + "<br>");
+        document.write(coches + "<br>");
+    </script>
+</body>
+
+</html>

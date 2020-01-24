@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="parrafo">saludos</p>
+
+    <script>
+        var cadena = "veinticuatro";
+
+        // Longitud
+        document.writeln(cadena.length + "<br>"); // 12
+
+        // Buscar caracter
+        document.writeln(cadena.indexOf('t') + "<br>"); // 2
+        document.writeln(cadena.lastIndexOf('t') + "<br>"); // 9
+        document.writeln(cadena.indexOf("cuatro") + "<br>"); // 6
+
+        document.writeln(cadena.indexOf('3') + "<br>"); // -1
+        document.writeln(cadena.indexOf(true) + "<br>"); // -1
+
+        document.writeln(cadena.indexOf('t', 7) + "<br>"); // 9
+
+        document.writeln(cadena.search('t') + "<br>"); // 4
+
+        // Cortar cadena
+        document.writeln(cadena.slice(2, 11) + "<br>"); // inticuatr
+        document.writeln(cadena.slice(-11, -2) + "<br>"); // einticuat
+        document.writeln(cadena.slice(4) + "<br>"); // ticuatro
+        document.writeln(cadena.slice(-2) + "<br>"); // ro
+
+        document.writeln(cadena.substring(2) + "<br>"); // inticuatro
+
+        document.writeln(cadena.substr(2, 4) + "<br>"); // inti
+
+        // Reemplazar cadenas
+        document.writeln(cadena.replace("cuatro", "cinco") + "<br>"); // veinticinco
+        document.writeln(cadena.replace("i", "u") + "<br>"); // veunticuatro
+        document.writeln(cadena.replace(/i/g, "u") + "<br>"); // veuntucuatro
+
+        // Mayúsculas
+        document.writeln(cadena.toUpperCase() + "<br>"); // VEINTICUATRO
+        document.writeln(("ME GUSTAN LOS TRENES").toLowerCase() + "<br>"); // me gustan los trenes
+
+        // Concatenar
+        document.writeln(cadena.concat(" ", "millones") + "<br>"); // veinticuatro millones
+
+        // Quitar espacios
+        document.writeln("h" + (" ola").trim() + "<br>"); // hola
+        document.getElementById("parrafo").innerHTML = "h" + (" ola").trim();
+
+        // Extraer caracter por índice
+        document.writeln(cadena.charAt(5) + "<br>"); // i
+
+        // Convertir a array
+        var arr = "12, 45, 67, 223, 56";
+        arr = arr.split(", ");
+
+        document.writeln(arr[2] + "<br>"); // 67
+    </script>
+</body>
+
+</html>
