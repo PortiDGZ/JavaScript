@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.writeln(Number(true || false)); // 1
+        document.writeln(Number(false && true)); // 0
+        document.writeln(Number("88")); // 88
+        document.writeln(Number("88.77")); // 88,77
+        document.writeln(Number("88,77")); // NaN
+        document.writeln(Number(6)); // 6
+        document.writeln(Number(NaN)); // NaN
+        document.writeln(Number("trueno")); // NaN
+
+        document.write("<br>");
+
+        document.writeln(parseInt(true || false)); // NaN
+        document.writeln(parseInt(false && true)); // NaN
+        document.writeln(parseInt("88")); // 88
+        document.writeln(parseInt("88.77")); // 88
+        document.writeln(parseInt("88,77")); // 88
+        document.writeln(parseInt(6)); // 6
+        document.writeln(parseInt(NaN)); // NaN
+        document.writeln(parseInt("trueno")); // NaN
+
+        document.write("<br>");
+
+        document.writeln(parseFloat(true || false)); // NaN
+        document.writeln(parseFloat(false && true)); // NaN
+        document.writeln(parseFloat("88")); // 88
+        document.writeln(parseFloat("88.77")); // 88,77
+        document.writeln(parseFloat("88,77")); // 88
+        document.writeln(parseFloat(6)); // 6
+        document.writeln(parseFloat(NaN)); // NaN
+        document.writeln(parseFloat("trueno")); // NaN
+    </script>
+</body>
+
+</html>
