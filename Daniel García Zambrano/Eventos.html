@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Botón que ejecuta un evento -->
+    <button onclick="alert(Date());">Ver fecha</button>
+
+    <br>
+
+    <!-- Cambiar el contenido del botón con this -->
+    <button onclick="this.innerHTML = Date();">Ver fecha</button>
+
+    <br>
+
+    <!-- Función que muestra la fecha -->
+    <script>
+        function fecha() {
+            alert(Date());
+        }
+    </script>
+
+    <!-- Usar la función -->
+    <button onclick="fecha();">Ver fecha</button>
+</body>
+
+</html>

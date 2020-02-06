@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones</title>
+</head>
+
+<body>
+    <script>
+        // Función que calcula el área de un círculo a partir del radio
+        function areaDeCirculo(r) {
+            return r * r * 3.1415;
+        }
+
+        document.write(areaDeCirculo(5) + '<br>');
+
+        // Función que covierte de Farenheit a Celsius
+        function farenheitACelsius(f) {
+            return (f - 32) * 5 / 9;
+        }
+
+        document.write(farenheitACelsius(77) + '<br>');
+
+        // Intentar mostrar variable de una función
+        function f1() {
+            var variable = 55;
+            document.write(typeof variable + '<br>');
+        }
+
+        f1();
+        document.write(typeof variable + '<br>');
+    </script>
+</body>
+
+</html>

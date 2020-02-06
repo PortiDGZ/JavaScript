@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Crear un objeto y mostrar un atributo
+        var rectangulo = {
+            base: 6,
+            altura: 3
+        };
+
+        document.write(rectangulo.altura + '<br>');
+
+        // Objeto con método
+        var persona = {
+            nombre: "Álvaro",
+            apellido: "Ramírez",
+            edad: 27,
+            nombreCompleto: function() {
+                return this.nombre + ' ' + this.apellido;
+            }
+        }
+
+        document.write(persona.nombreCompleto() + ' ' + persona.edad + '<br>');
+
+        // Modificar atributos
+        persona.edad += 7;
+
+        document.write(persona.edad + '<br>');
+    </script>
+</body>
+
+</html>
