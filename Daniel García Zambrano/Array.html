@@ -62,9 +62,25 @@
         document.write(coches.unshift(" Abarth") + "<br>");
         document.write(coches + "<br>");
 
-        //Splice(posicion, n_eliminados, nuevo elemento, nuevo elemento,...)
+        // Splice(posicion, n_eliminados, nuevo elemento, nuevo elemento,...)
         document.write(coches.splice(2, 2, " Ferrari") + "<br>");
         document.write(coches + "<br>");
+        document.write(coches + "<br>");
+
+        // Concat()
+        document.write(coches.concat(coches) + "<br>");
+        document.write(coches.concat(coches).concat(coches) + "<br>");
+        document.write(coches.concat(["wefiowef"]) + "<br>");
+
+        // Sort()
+        document.write(coches.sort() + "<br>");
+
+        // Reverse()
+        document.write(coches.reverse() + "<br>");
+
+        document.write(coches.sort() + "<br>");
+
+        document.write([1, 5, 4].sort() + "<br>");
     </script>
 </body>
 

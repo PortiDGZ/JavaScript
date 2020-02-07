@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bucles</title>
+</head>
+
+<body>
+    <h2 id="h">Bucles</h2>
+    <script>
+        // Bucle while
+        var i = 0;
+
+        while (i < 10) {
+            document.write(i++);
+        }
+
+        document.write(' ');
+
+        // Bucle do-while
+        do {
+            document.write(i++);
+        } while (i < 10);
+
+        document.write(' ');
+
+        // Bucle for
+        for (i = 0; i <= 10; i += 2) {
+            document.write(i);
+        }
+
+        // Iteración en matrices
+        var arr = ['H', 'I', 'J'];
+
+        document.write(' ');
+
+        for (i = 0; i <= arr.length - 1; i++) {
+            document.write(arr[i]);
+        }
+
+        document.write(' ');
+
+        // Bucle for-each
+        for (elem of arr) {
+            document.write(elem);
+        }
+    </script>
+</body>
+
+</html>

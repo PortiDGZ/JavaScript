@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicionales</title>
+</head>
+
+<body>
+    <h2 id="h">Condicionales</h2>
+    <script>
+        var n = parseInt(prompt("Introduce un múltiplo de 67: ", "0"));
+
+        if (n < 0) {
+            alert("Número incorrecto.");
+        } else if (n % 67 == 0) {
+            alert("Número correcto.");
+        } else {
+            alert("Número incorrecto.");
+        }
+
+        alert("Se lanza una moneda.");
+
+        n = n * 4444 % 7;
+
+        switch (n) {
+            case 0:
+                alert("Cae de canto.");
+                break;
+            case 1:
+            case 2:
+            case 3:
+                alert("Sale cara.");
+                break;
+            case 4:
+            case 5:
+            case 6:
+                alert("Sale cruz.");
+                break;
+        }
+    </script>
+</body>
+
+</html>
